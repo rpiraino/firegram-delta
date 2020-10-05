@@ -3,16 +3,15 @@
  import 'firebase/firestore';
 
  // Your web app's Firebase configuration
- <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
  var firebaseConfig = {
-  apiKey: "AIzaSyBXNsjo6oe9XY5TYQz7pOMDYYIebMBfM1w",
-  authDomain: "firegram-delta.firebaseapp.com",
-  databaseURL: "https://firegram-delta.firebaseio.com",
-  projectId: "firegram-delta",
-  storageBucket: "firegram-delta.appspot.com",
-  messagingSenderId: "908444683757",
-  appId: "1:908444683757:web:299d54e938a53d54c1abe4"
-};
+    apiKey: "AIzaSyCoDbhoXjLQ-ewPTN7hEQ6HDa4RIlKyQuw",
+    authDomain: "firegram-f6c30.firebaseapp.com",
+    databaseURL: "https://firegram-f6c30.firebaseio.com",
+    projectId: "firegram-f6c30",
+    storageBucket: "firegram-f6c30.appspot.com",
+    messagingSenderId: "175320974219",
+    appId: "1:175320974219:web:9d12292391259f3b26a58e"
+  };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
