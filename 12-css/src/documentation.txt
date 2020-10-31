@@ -1,0 +1,36 @@
+part1 starter-files
+1. clone the starter files and point the origin to my own repository
+2. create a documentation.txt file in 'src' folder
+3. run 'npm install' to update dependencies
+4. run 'npm audit fix' to fix vulnerabilities
+
+part2-firestore-setup
+1. signup for free firestore account
+2. create a firebase project: a4-firegram
+3. disable google analytics
+4. create a new web app for the project 'a4-firegram'
+5. copy the firebase config settings between the tags: <script> 
+// Your web app's Firebase configuration
+</script>
+6. create a new folder 'firebase' and in that a new file 'config.js'
+7. in VS Code Terminal run: npm install firebase
+8. at the top of config.js add: 
+
+import * as firebase from 'firebase/app';
+import 'firebase/storage';
+import 'firebase/firestore';
+
+9. at the end of config.js add constants for the two services we will be using:
+
+  const projectStorage = firebase.storage();
+  const projectFirestore = firebase.firestore();
+  
+  export { projectStorage, projectFirestore };
+
+10. go to the firebase console click on 'cloud firestore' and 
+create a firestore database, click 'start in test mode'
+
+11. create a storage bucket, in the console click on 'Storage' and 'get started'
+12. once you have the storage bucket click on the 'rules' tab and change the rule to allow:
+allow read, write;
+
